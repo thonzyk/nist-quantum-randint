@@ -6,7 +6,7 @@ This is meant to be a minimal, easy-to-audit way to grab quantum random numbers 
 
 ## What it does
 
-- Pulls the last NIST Beacon pulse (`outputValue`, 512 bits).
+- Waits for the next NIST Beacon pulse (`outputValue`, 512 bits).
 - Treats it as a fixed 512-bit pool.
 - Produces uniform integers in `[low, high]` via rejection sampling.
 - Uses **only that single pulse** (no refills).
